@@ -10,33 +10,46 @@
 </head>
 
 <body>
-    <header class="navbar navbar-default navbar-fixed-top navbar-inner">
-        <div class="container">
+    <header>
+        <nav class="navbar navbar-default" role="navigation" nav-dropdown>
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+
+                <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
-                <a class="navbar-brand" href="#">Sam Maphey</a>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#/projects">Projects</a></li>
-                    <li><a href="#/experience">Experience</a></li>
-                    <li><a href="#/info">Info</a></li>
-                    <li><a href="#/acknowledgments">Acknowledgments</a></li>
-                </ul>
+              </button>
+                <a class="navbar-brand" href="#/">Sam Maphey</a>
             </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" data-toggle="uib-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/projects">Projects</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/info">Info</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/experience">Experience</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/acknowledgments">Acknowledgments</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
     </header>
-
-
+    <div ng-view=""></div>
     <script src="assets/libraries/bower_components/angular/angular.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
     <script src="assets/libraries/bower_components/angular-animate/angular-animate.js"></script>
     <script src="assets/libraries/bower_components/angular-route/angular-route.js"></script>
+    <script src="assets/libraries/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="app/acknowledgments/acknowledgments.js"></script>
+    <script src="app/experience/experience.js"></script>
+    <script src="app/info/info.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/projects/projects.js"></script>
 </body>
 
 </html>

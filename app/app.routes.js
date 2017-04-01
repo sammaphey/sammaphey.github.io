@@ -1,4 +1,5 @@
-app.config(function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $locationProvider.hashPrefix('');
     $routeProvider
 
 
@@ -31,7 +32,7 @@ app.config(function($routeProvider) {
         })
 
         .otherwise({
-          templateUrl: 'app/home/home.html',
-          controller: 'homeCtrl'
+            templateUrl: 'app/home/home.html',
+            controller: 'homeCtrl'
         });
-});
+}]);
