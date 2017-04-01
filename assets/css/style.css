@@ -1,6 +1,28 @@
 
-body {
-  background-image: url("../img/IMG_0809.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.jumbotron {
+   background: rgb(211,211,211); /* This is for ie8 and below */
+   background: rgba(211,211,211, 0.5);
 }
