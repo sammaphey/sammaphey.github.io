@@ -175,7 +175,6 @@ hr {
 .image figure p {
     position: absolute;
     margin-top: -50px;
-    margin-left: 60px;
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.5);
