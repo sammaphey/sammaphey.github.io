@@ -15,9 +15,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
 
-        .when('/info', {
-            templateUrl: 'app/info/info.html',
-            controller: 'infoCtrl'
+        .when('/resume', {
+            templateUrl: 'app/info/resume.html',
+            controller: 'resumeCtrl'
         })
 
         .when('/acknowledgments', {
