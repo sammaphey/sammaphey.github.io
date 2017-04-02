@@ -114,10 +114,12 @@ hr {
     font-style: italic;
 }
 
-.jumbotron .col-md-8 {
+.jumbotron .col-md-8, .resume-full{
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.8);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 
@@ -199,4 +201,19 @@ hr {
 .image figure:hover img {
     -webkit-filter: blur(0);
     filter: blur(0);
+}
+
+.resume-full p {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.resume-full span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.resume-full a {
+  float: right;
+  margin: 0px 5px 0px 5px;
 }
