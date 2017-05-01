@@ -1,8 +1,55 @@
 <div class="container">
     <div class="jumbotron">
         <div ng-controller="experienceCtrl">
-          <ng-include src="'app/templates/resume-header.html'"></ng-include>
-            {{experience}}
+            <ng-include src="'app/templates/resume-header.html'"></ng-include>
+            <div class="resume-full">
+                <h1 style="text-align:center;">Programming Languages</h1>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Beginner</th>
+                            <th>Intermediate</th>
+                            <th>Expert</th>
+                            <th>Master</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="head"><h3>Python<h3></td>
+                            <td ng-repeat="i in skill(3) track by $index"><div class="block" style="background-color:#778899"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>Java<h3></td>
+                            <td ng-repeat="i in skill(2) track by $index"><div class="block" style="background-color:#A9A9A9"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>CSS<h3></td>
+                            <td ng-repeat="i in skill(2) track by $index"><div class="block" style="background-color:#808080"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>Assembly<h3></td>
+                            <td ng-repeat="i in skill(2) track by $index"><div class="block" style="background-color:#696969"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>JavaScript<h3></td>
+                            <td ng-repeat="i in skill(3) track by $index"><div class="block" style="background-color:#2F4F4F"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>C++<h3></td>
+                            <td ng-repeat="i in skill(2) track by $index"><div class="block" style="background-color:#708090"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="head"><h3>HTML<h3></td>
+                            <td ng-repeat="i in skill(3) track by $index"><div class="block" style="background-color:#000000"></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
         </div>
     </div>
-</div>

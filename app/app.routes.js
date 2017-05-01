@@ -9,9 +9,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
 
-        .when('/projects', {
-            templateUrl: 'app/projects/projects.html',
-            controller: 'projectsCtrl'
+        .when('/education', {
+            templateUrl: 'app/education/education.html',
+            controller: 'educationCtrl'
         })
 
 

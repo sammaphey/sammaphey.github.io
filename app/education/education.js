@@ -1,3 +1,3 @@
-app.controller("projectsCtrl", function($scope) {
+app.controller("educationCtrl", function($scope) {
   $scope.projects = "I have done some projects"
 });

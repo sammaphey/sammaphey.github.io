@@ -16,6 +16,64 @@ body, html {
     background-size: cover;
 }
 
+th {
+  font-size: 24px;
+}
+
+.table th{
+    border-bottom: black solid 1px !important;
+}
+.table td{
+    border: black solid 0px !important;
+}
+.table td:first-child{
+    border-right: black solid 1px !important;
+}
+
+.block {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 5px 20px 5px 10px;
+  border-radius: 50%;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-right: 20px;
+    /* Add some right padding */
+    line-height: 40px;
+    /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white;
+    /* White text color */
+    border-radius: 5px;
+}
+
+.html {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+
+.php {
+    width: 60%;
+    background-color: #808080;
+}
+
+
 hr {
     display: block;
     height: 1px;
@@ -85,11 +143,6 @@ hr {
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.5);
 }
-
-
-/*.jumbotron p {
-    font-weight: bold;
-}*/
 
 .jumbotron a {
     color: black;
@@ -193,9 +246,4 @@ hr {
 .resume-full span {
   font-weight: bold;
   font-size: 16px;
-}
-
-.resume-full a {
-  float: right;
-  margin: 0px 5px 0px 5px;
 }

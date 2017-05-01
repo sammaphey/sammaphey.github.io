@@ -1,3 +1,6 @@
 app.controller("experienceCtrl", function($scope) {
-  $scope.experience = "I have experience"
+
+    $scope.skill = function(num) {
+      return new Array(num);
+    };
 });
