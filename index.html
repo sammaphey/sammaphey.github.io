@@ -12,7 +12,6 @@
 <body>
     <header>
         <nav class="navbar navbar-default" role="navigation" nav-dropdown>
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
                 <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
@@ -24,15 +23,12 @@
                 <a class="navbar-brand" href="#/"><img id="home-image" src="assets/img/favicon_color.png" alt="Sam Maphey"></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" data-toggle="uib-collapse">
 
                 <ul class="nav navbar-nav">
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/resume">Resume</a></li>
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/experience">Experience</a></li>
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/education">Education</a></li>
-                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/acknowledgments">Acknowledgments</a></li>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -45,7 +41,6 @@
     <script src="assets/libraries/bower_components/angular-animate/angular-animate.js"></script>
     <script src="assets/libraries/bower_components/angular-route/angular-route.js"></script>
     <script src="assets/libraries/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-    <script src="app/acknowledgments/acknowledgments.js"></script>
     <script src="app/experience/experience.js"></script>
     <script src="app/resume/resume.js"></script>
     <script src="app/home/home.js"></script>

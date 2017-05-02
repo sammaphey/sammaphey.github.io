@@ -20,11 +20,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'resumeCtrl'
         })
 
-        .when('/acknowledgments', {
-            templateUrl: 'app/acknowledgments/acknowledgments.html',
-            controller: 'acknowledgmentsCtrl'
-        })
-
 
         .when('/experience', {
             templateUrl: 'app/experience/experience.html',
