@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>Calculate Your Grade</h1>
+        <div class="resume-full">
+            <p>This page represents the calculation of grades for you class (something that I often like to calculate over the course of my semester). Just fill out the form accordingly and I will calculate your overall grade.</p>
+            <button style="float:left;margin-bottom:5px;" class="btn btn-primary" ng-click="addClass()">New Class  <span class="glyphicon glyphicon-plus"></span></button>
+            <button style="float:right;margin-bottom:5px;" class="btn btn-primary" ng-click="calculate()">Calculate Grade  <span class="glyphicon glyphicon-ok"></span></button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div ng-repeat="class in classes track by $index">
+                        <div class="col-md-3">
+                            <label>Class {{$index + 1}}: </label>
+                            <input type="text" class="form-control" placeholder="Class Name..." ng-model="class.name">
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Credit Hours..." ng-model="class.credits" />
+                        </div>
+                        <div class="col-md-3">
+                            <label>Quiz</label>
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Quiz Grade..." ng-model="class.wieghts.quizGrade">
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Quiz Weight..." ng-model="class.wieghts.quizWeight">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Exam</label>
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Exam Grade..." ng-model="class.wieghts.examGrade">
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Exam Weight..." ng-model="class.wieghts.examWeight">
+                        </div>
+                        <div class="col-md-3">
+                            <label>Homework</label>
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Homework Grade..." ng-model="class.wieghts.homeworkGrade">
+                            <input type="number" min="0" step="1" class="form-control" placeholder="Homework Weight..." ng-model="class.wieghts.homeworkWeight">
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-md-4" ng-show="showResults">
+                    <h3 style="text-align:center;">Results</h3>
+                    <p><span>Weighted Grade = </span>{{totalWeightGrade}}</p>
+                    <p><span>Total Credits = </span>{{totalCredits}}</p>
+                    <p><span>Total GPA = </span>{{totalGPA}}</p>
+                    <p><span>Grade (/100) = </span>{{grade}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

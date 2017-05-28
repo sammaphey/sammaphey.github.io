@@ -26,6 +26,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'experienceCtrl'
         })
 
+
+        .when('/game', {
+            templateUrl: 'app/game/game.html',
+            controller: 'gameCtrl'
+        })
+
         .otherwise({
             templateUrl: 'app/home/home.html',
             controller: 'homeCtrl'
