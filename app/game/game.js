@@ -4,7 +4,7 @@ app.controller("gameCtrl", function($scope) {
     $scope.classes = [{
         name: "",
         credits: null,
-        wieghts: {
+        weights: {
             quizWeight: null,
             quizGrade: null,
             examWeight: null,
@@ -30,7 +30,6 @@ app.controller("gameCtrl", function($scope) {
         var weightHomeworkGrade = (course.weights.homeworkGrade * course.weights.homeworkWeight);
         var totalWeightGrade = weightQuizGrade + weightExamGrade + weightHomeworkGrade;
         totalCredits += course.credits;
-        totalWeightGrade += weightCourseGrade;
       }
       var totalGPA = totalWeightGrade / totalCredits;
       $scope.totalWeightGrade = totalWeightGrade;

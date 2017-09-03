@@ -1,50 +1,60 @@
 <div class="container">
-    <div class="jumbotron">
-        <div ng-controller="homeCtrl">
-            <ng-include src="'app/templates/resume-header.html'"></ng-include>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>This Site was set up to showcase my abilities in software development.</p>
-                    <p>The application that you are currently viewing was written using an <a href="https://angularjs.org/">Angular</a> framework with <a href="https://github.com">Github</a> for web page hosting and as the version control system.
-                    </p>
-                    <p>If you are interested in looking at the files needed for this web application or even to use my application as the basis for your own resume website you can check out my repo <a href="https://github.com/sammaphey/angular-app">
-                      here.</a>
-                    </p>
-                </div>
-                <div class="col-md-4 centered">
-                    <div class="wrapper">
-                        <div class="image">
-                            <div class="resume">
-                                <a href="#/resume">
-                                    <figure>
-                                        <img src="assets/img/profile.jpg" alt="Resume" />
-                                        <p>Resume</p>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <div class="experience">
-                                <a href="#/experience">
-                                    <figure>
-                                        <img src="assets/img/NASA_logo_color.png" alt="Experience" />
-                                        <p>Experience</p>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <div class="projects">
-                                <a href="#/education">
-                                    <figure>
-                                        <img src="assets/img/project_color.jpg" alt="Education" />
-                                        <p>Education</p>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="jumbotron">
+    <div ng-controller="homeCtrl">
+      <ng-include src="'app/templates/resume-header.html'"></ng-include>
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Hi. My name is Sam Maphey and I am a Computer Engineering student currently attending <a href="http://www.clarkson.edu">Clarkson University</a>.
+          </p>
+          <p>
+            At the current moment my skills involve web design specifically through the MEAN stack (Mongo Express Angular and Node)
+            but my goal is to increase my overall computer science prowess through my education. <br />
+          </p>
+          <p>
+            I am open to internships at any location and have previously interned with the <a href="https://www.nasa.gov">National Aeronautics and Space Administration (NASA)</a> through the <a href="https://www.nasa.gov/centers/glenn/home/index.html">Glenn Research Center</a>.
+          </p>
+          <p>
+            I prefer working as part of a team and truly enjoy challenges (hence the engineering affinity).
+          </p>
+          <p>
+            At Glenn I worked with the <a href="https://www.grc.nasa.gov/gvis/">Graphics and Visualization</a> team to develop an API that allowed for more easy interaction between a <a href="https://www.grantadesign.com/">GRANTA MI</a> database and the workflow of a materials engineer.
+          </p>
         </div>
+        <div class="col-md-4 centered">
+          <div class="wrapper">
+            <div class="image">
+              <div class="resume">
+                <a href="#/resume">
+                  <figure>
+                    <img src="assets/img/profile.jpg" alt="Resume" />
+                    <p><strong>Resume</strong></p>
+                  </figure>
+                </a>
+              </div>
+            </div>
+            <div class="image">
+              <div class="experience">
+                <a href="#/experience">
+                  <figure>
+                    <img src="assets/img/NASA_logo_color.png" alt="Experience" />
+                    <p><strong>Experience</strong></p>
+                  </figure>
+                </a>
+              </div>
+            </div>
+            <div class="image">
+              <div class="projects">
+                <a href="#/education">
+                  <figure>
+                    <img src="assets/img/clarkson_logo.png" alt="Education" />
+                    <p><strong>Education</strong></p>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>

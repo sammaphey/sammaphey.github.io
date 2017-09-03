@@ -233,6 +233,11 @@ hr {
     background: rgba(211, 211, 211, 0.5);
 }
 
+.image figure {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .image figure:hover img {
     -webkit-filter: blur(0);
     filter: blur(0);

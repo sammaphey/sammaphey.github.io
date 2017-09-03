@@ -15,18 +15,18 @@
                         </div>
                         <div class="col-md-3">
                             <label>Quiz</label>
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Quiz Grade..." ng-model="class.wieghts.quizGrade">
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Quiz Weight..." ng-model="class.wieghts.quizWeight">
+                            <input type="number" class="form-control" placeholder="Quiz Grade..." ng-model="class.weights.quizGrade" />
+                            <input type="number" class="form-control" placeholder="Quiz Weight..." ng-model="class.weights.quizWeight" />
                         </div>
                         <div class="col-md-3">
                             <label>Exam</label>
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Exam Grade..." ng-model="class.wieghts.examGrade">
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Exam Weight..." ng-model="class.wieghts.examWeight">
+                            <input type="number" class="form-control" placeholder="Exam Grade..." ng-model="class.weights.examGrade" />
+                            <input type="number" class="form-control" placeholder="Exam Weight..." ng-model="class.weights.examWeight" />
                         </div>
                         <div class="col-md-3">
                             <label>Homework</label>
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Homework Grade..." ng-model="class.wieghts.homeworkGrade">
-                            <input type="number" min="0" step="1" class="form-control" placeholder="Homework Weight..." ng-model="class.wieghts.homeworkWeight">
+                            <input type="number" class="form-control" placeholder="Homework Grade..." ng-model="class.weights.homeworkGrade" />
+                            <input type="number" class="form-control" placeholder="Homework Weight..." ng-model="class.weights.homeworkWeight" />
                         </div>
                     </div>
                   </div>
@@ -34,8 +34,6 @@
                     <h3 style="text-align:center;">Results</h3>
                     <p><span>Weighted Grade = </span>{{totalWeightGrade}}</p>
                     <p><span>Total Credits = </span>{{totalCredits}}</p>
-                    <p><span>Total GPA = </span>{{totalGPA}}</p>
-                    <p><span>Grade (/100) = </span>{{grade}}</p>
                 </div>
             </div>
         </div>

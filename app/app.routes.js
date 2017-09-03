@@ -27,13 +27,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
 
-        .when('/game', {
-            templateUrl: 'app/game/game.html',
-            controller: 'gameCtrl'
-        })
-
-        .otherwise({
-            templateUrl: 'app/home/home.html',
-            controller: 'homeCtrl'
-        });
+        // .when('/game', {
+        //     templateUrl: 'app/game/game.html',
+        //     controller: 'gameCtrl'
+        // })
 }]);
