@@ -21,10 +21,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
 
-        .when('/experience', {
-            templateUrl: 'app/experience/experience.html',
-            controller: 'experienceCtrl'
-        })
+        // .when('/experience', {
+        //     templateUrl: 'app/experience/experience.html',
+        //     controller: 'experienceCtrl'
+        // })
 
 
         // .when('/game', {
