@@ -24,13 +24,12 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-          pip-dependency-file: requirements.txt
       - run:
           name: Convert to PDF
           # This assumes pytest is installed via the install-package step above
-          command: abiword --to=pdf assets/files/resume.docx assets/files/resume.pdf
+          command: |
+            sudo apt-get install -y abiword
+            abiword --to=pdf assets/files/resume.docx assets/files/resume.pdf
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
