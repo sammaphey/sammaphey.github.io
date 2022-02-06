@@ -31,6 +31,8 @@ jobs:
             sudo apt update -y
             sudo apt install libreoffice -y
             soffice --convert-to pdf --outdir assets/files/resume.pdf assets/files/resume.docx
+            git config --global user.email "sammaphey@gmail.com"
+            git config --global user.name "Sam Maphey"
             git add assets/
             git commit -am "Update resume file"
             git push
