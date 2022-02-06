@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Convert to PDF
           # This assumes pytest is installed via the install-package step above
-          command: docx2pdf assets/files/resume.docx assets/files/resume.pdf
+          command: abiword --to=pdf assets/files/resume.docx assets/files/resume.pdf
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
