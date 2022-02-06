@@ -30,7 +30,9 @@ jobs:
           command: |
             sudo apt-get update -y
             sudo apt-get install -y abiword
-            abiword --to=pdf assets/files/resume.docx assets/files/resume.pdf
+            abiword --to=pdf assets/files/resume.docx /tmp/artifacts
+      - store_artifacts:
+          path: /tmp/artifacts
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
