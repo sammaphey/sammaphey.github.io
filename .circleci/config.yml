@@ -28,9 +28,9 @@ jobs:
           name: Convert to PDF
           # This assumes pytest is installed via the install-package step above
           command: |
-            sudo apt-get update -y
-            sudo apt-get install -y abiword
-            abiword --to=pdf assets/files/resume.docx /tmp/artifacts
+            sudo apt update -y
+            sudo apt install libreoffice -y
+            soffice --convert-to pdf --outdir /tmp/artifacts assets/files/resume.docx
       - store_artifacts:
           path: /tmp/artifacts
 
