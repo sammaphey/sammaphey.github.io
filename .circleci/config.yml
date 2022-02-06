@@ -35,7 +35,7 @@ jobs:
             git config --global user.name "Sam Maphey"
             git add assets/
             git commit -am "Update resume file"
-            git push
+            git push --set-upstream origin circleci-project-setup
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
